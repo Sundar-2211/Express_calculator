@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<style>
+   
+</style>
+</head>
+<body class="bg-dark">
+    <div class="calculator bg-warning" style="margin-left: 40%; margin-top: 10%; max-width: 400PX;width: 100%;height: 50vh;border-radius: 8px; ">
+    <h1 style="text-align: center;" >Simple Calculator</h1>
+    <form action="/calculator" method="POST" style="margin-left: 5%;">
+        <label for="n1" style="font-weight: bold;">Number 1:</label>
+        <input style="width: 90% ;height: 5vh; border-radius: 5px; " type="text" id="n1" name="n1" required placeholder="Enter number"><br><br>
+        
+        <label for="n2" style="font-weight: bold;">Number 2:</label>
+        <input style="width: 90%;height: 5vh;border-radius: 5px; " type="text" id="n2" name="n2" required placeholder="Enter number"><br><br>
+        
+        <label for="operation"style="font-weight: bold;">Operation:</label>
+        <select style="width: 90%;height: 7vh;" id="operation" name="operation" required>
+            <option value="add">Add</option>
+            <option value="subtract">Subtract</option>
+            <option value="multiply">Multiply</option>
+            <option value="divide">Divide</option>
+        </select><br><br>
+        
+        <button class="btn btn-success" style="width: 90%;" type="submit">Calculate</button>
+    </form>
+</div>
+</body>
+</html>
